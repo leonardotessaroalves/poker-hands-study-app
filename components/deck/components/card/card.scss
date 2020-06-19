@@ -1,0 +1,20 @@
+.deck-card {
+    position: absolute;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    max-width: 150px;
+    padding: 5px;
+    background: #2b1020;
+    border-radius: 8px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.5);
+    transition-delay: inherit;
+    .card {
+        position: relative;    
+        display: flex;
+        img {    
+            width: 100%;        
+        }
+        
+    }
+}
