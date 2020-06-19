@@ -140,7 +140,7 @@ export default class Main extends Vue {
     let isADraw = rank1.value === rank2.value
 
     this.openModalWinner({
-      name: winner ? 'Player 1' : 'Player 2',
+      name: winner ? 'Você' : 'NPC',
       draw: isADraw,
       rank: winner ? rank1.name : rank2.name
     })
