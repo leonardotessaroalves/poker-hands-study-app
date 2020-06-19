@@ -1,0 +1,8 @@
+.board {
+    .j-center {
+        justify-content: center;
+    }
+    ::v-deep .flip-container {
+        padding: 0 10px;
+    }
+}

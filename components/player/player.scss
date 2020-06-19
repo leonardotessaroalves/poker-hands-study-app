@@ -1,0 +1,12 @@
+.player {
+    .result, .name {
+        color: white;
+        font-size: 32px;
+        font-family: 'Press Start 2P', cursive;
+        text-shadow: -3px -2px black, 1px 1px white;
+        margin-bottom: 40px;
+    }
+    ::v-deep .flip-container {
+        padding: 0 10px;
+    }
+}
