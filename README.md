@@ -1,6 +1,6 @@
-# leonardo-poker-app
+# Poker Hands Study App
 
-> Poker app - For studies purpose
+> Poker app
 
 ## Build Setup
 
