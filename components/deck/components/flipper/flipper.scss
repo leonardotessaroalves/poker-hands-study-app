@@ -1,9 +1,10 @@
 .flip-container {
   display: inline-block;
-  width: 150px;
+  width: 130px;
   height: 206px;
   perspective: 1000px;
   transition-delay: inherit;
+  margin: auto;
   .flipper {
     position: relative;
     width: 100%;

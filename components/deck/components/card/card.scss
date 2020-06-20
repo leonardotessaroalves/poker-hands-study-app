@@ -6,9 +6,10 @@
     max-width: 150px;
     padding: 5px;
     background: #2b1020;
-    border-radius: 8px;
     box-shadow: -2px 4px 3px rgba(0,0,0,0.5);
     transition-delay: inherit;
+    border: 4px solid white;
+    border-radius: 12px;
     .card {
         position: relative;    
         display: flex;
