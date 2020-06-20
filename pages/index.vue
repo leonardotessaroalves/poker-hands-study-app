@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title"> Leonardo Poker App </h1>
     
-    <el-row type="flex">
+    <el-row type="flex" class="j-center">
       <el-col :span="6">
         <player :name="player1.name" :cards="player1.cards" :visible="player1.visible" :result="player1.result" />
       </el-col>
@@ -15,12 +15,15 @@
         <player :name="player2.name" :cards="player2.cards" :visible="player2.visible" :result="player2.result" />
       </el-col>
     </el-row>
-
-    <el-row>
+    
+    <el-row type="flex" class="j-center">
       <custom-button v-if="!started" label="Dar cartas" @click="startGame" />
       <custom-button v-else-if="underBoard.cards.length < 5" label="Cartas na mesa" @click="putOnBoard" />
       <custom-button v-else-if="!player2.visible" label="Hack" @click="showOponentCards" />
       <custom-button v-else label="Ver resultados" @click="calculateWinner" />
+    </el-row>
+
+    <el-row type="flex" class="j-center">      
     </el-row>
 
     <iframe src="~/assets/audio/audio-game.mp3" type="audio/mp3" allow="autoplay" style="display:none"></iframe>
@@ -38,6 +41,7 @@ import Player from '@/components/player/player'
 import Board from '@/components/board/board'
 import CustomButton from '@/components/button/button'
 import Result from '@/components/result/result'
+import DeckHolder from '@/components/deck/deck'
 import { Card } from '../types'
 import { clone } from 'lodash'
 // import { Card, SuitEnum } from '@/types'
@@ -68,7 +72,8 @@ const underBoardDefs = {
     Player,
     Board,
     CustomButton,
-    Result
+    Result,
+    DeckHolder
   },
    async asyncData({ $axios }:any) {
     const deck = await $axios.$get('deck')
@@ -214,8 +219,16 @@ export default class Main extends Vue {
     text-shadow: -3px -2px black, 1px 1px #00d6ff;
     margin-bottom: 50px;
   }
+
   .el-row {
-    width: -webkit-fill-available;
+    width: stretch;
+    &.j-center {
+      justify-content: center;
+    }
+  }
+
+  .cards-deck {
+    padding: 20px;
   }
 }
 </style>

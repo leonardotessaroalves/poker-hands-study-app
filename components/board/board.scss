@@ -1,4 +1,6 @@
 .board {
+    display: flex;
+    flex-grow: 1;
     .j-center {
         justify-content: center;
     }
