@@ -209,7 +209,7 @@ export default class Main extends Vue {
   justify-content: center;
   align-items: center;  
   text-align: center;
-  background: url('https://cdn11.bigcommerce.com/s-c1tzcg0txe/products/8381/images/9242/Ozone_Blue__63799.1523637102.500.750.jpg?c=2');
+  background: #9a9a9a;
 
   .title {
     color: #002533;
