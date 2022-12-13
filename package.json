@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.11.0",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "lodash": "^4.17.15",
     "nuxt": "^2.0.0",
     "vue-class-component": "^7.2.3",
